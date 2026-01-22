@@ -53,7 +53,7 @@
                 <a href="#features" class="hover:text-primary transition">الميزات</a>
                 <a href="#technology" class="hover:text-primary transition">الخوارزميات</a>
                 <a href="#wiring" class="hover:text-primary transition">التوصيل</a>
-                <a href="#manual" class="hover:text-primary transition">دليل الاستخدام</a>
+                <a href="#roadmap" class="hover:text-primary transition">المستقبل</a>
             </div>
             <a href="mailto:Foxmgh@protonmail.com" class="px-5 py-2 bg-primary text-white rounded-full font-bold hover:bg-emerald-600 transition shadow-lg shadow-emerald-500/20">
                 <i class="fa-solid fa-envelope ml-2"></i> تواصل معي
@@ -304,7 +304,74 @@
         </script>
     </section>
 
-    <section id="wiring" class="py-20">
+    <section id="roadmap" class="py-20 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl -translate-x-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl translate-x-1/2"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-1 mb-4 border border-blue-500/30 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold tracking-wider">
+                    COMING SOON
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4">خارطة الطريق: الإصدار الثالث (V3.0)</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    نحن لا نتوقف هنا. إليك ما نعمل عليه للإصدار القادم من النظام لجعله متكاملاً مع معايير إنترنت الأشياء والأمن الجنائي.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-b from-slate-800 to-slate-900 p-1 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="bg-dark h-full rounded-xl p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-5">
+                            <i class="fa-solid fa-wifi text-8xl text-white"></i>
+                        </div>
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400">
+                            <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">الاتصال السحابي (IoT)</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            ربط النظام بشريحة ESP32 لإرسال القراءات لحظياً إلى لوحة تحكم على الهاتف، واستلام تنبيهات عبر Telegram عند الخطر.
+                        </p>
+                        <span class="text-xs font-mono text-blue-400 bg-blue-500/10 px-2 py-1 rounded">Dev Stage: 40%</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-b from-slate-800 to-slate-900 p-1 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="bg-dark h-full rounded-xl p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-5">
+                            <i class="fa-solid fa-hard-drive text-8xl text-white"></i>
+                        </div>
+                        <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6 text-red-400">
+                            <i class="fa-solid fa-box-archive text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">الصندوق الأسود (Black Box)</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            وحدة تسجيل بيانات (Data Logger) على بطاقة SD لتخزين القراءات كل ثانية. تتيح التحليل الجنائي (Forensic) بعد الحوادث لمعرفة وقت ومصدر التسرب.
+                        </p>
+                        <span class="text-xs font-mono text-red-400 bg-red-500/10 px-2 py-1 rounded">Dev Stage: 60%</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-b from-slate-800 to-slate-900 p-1 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="bg-dark h-full rounded-xl p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-5">
+                            <i class="fa-solid fa-temperature-arrow-up text-8xl text-white"></i>
+                        </div>
+                        <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6 text-emerald-400">
+                            <i class="fa-solid fa-flask text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">الدمج البيئي (Sensor Fusion)</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            إضافة حساسات حرارة ورطوبة (DHT22) لتعويض أخطاء القراءة الناتجة عن الطقس الحار، مما يرفع دقة النظام إلى 99.9%.
+                        </p>
+                        <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">Dev Stage: 20%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wiring" class="py-20 border-t border-slate-800">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
