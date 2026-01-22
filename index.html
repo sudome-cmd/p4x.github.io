@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام مونستر للحماية الذكية | Montser Gas Guard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981', // Emerald Green
+                        dark: '#0f172a',    // Slate 900
+                        card: '#1e293b'     // Slate 800
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tajawal', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            box-shadow: 0 0 100px -20px rgba(16, 185, 129, 0.3);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #10b981; }
+    </style>
+</head>
+<body class="bg-dark text-slate-300 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-shield-virus text-primary"></i>
+                <span>Montser<span class="text-primary">Guard</span></span>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#features" class="hover:text-primary transition">الميزات</a>
+                <a href="#wiring" class="hover:text-primary transition">التوصيل</a>
+                <a href="#manual" class="hover:text-primary transition">دليل الاستخدام</a>
+            </div>
+            <a href="mailto:Foxmgh@protonmail.com" class="px-5 py-2 bg-primary text-white rounded-full font-bold hover:bg-emerald-600 transition shadow-lg shadow-emerald-500/20">
+                <i class="fa-solid fa-envelope ml-2"></i> تواصل معي
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1 mb-6 border border-emerald-500/30 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-semibold">
+                الإصدار الاحترافي v2.0
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                الحماية ليست مجرد جهاز<br>
+                <span class="gradient-text">إنها خوارزمية ذكية</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                أول نظام كشف غاز مفتوح المصدر يعتمد على العتبة التكيفية (Adaptive Threshold) وتحليل SPRT الإحصائي ليعمل بدقة عالية.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://github.com/hydrayr545" target="_blank" class="px-8 py-4 bg-white text-dark rounded-lg font-bold hover:bg-slate-200 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-github"></i> تحميل الكود
+                </a>
+                <a href="#wiring" class="px-8 py-4 border border-slate-700 rounded-lg font-bold hover:bg-slate-800 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-microchip"></i> طريقة التركيب
+                </a>
+            </div>
+            
+            <div class="mt-16 mx-auto max-w-4xl bg-card border border-slate-700 rounded-xl p-2 hero-glow">
+                <div class="bg-black rounded-lg p-4 font-mono text-left text-sm md:text-base overflow-hidden">
+                    <div class="flex gap-2 mb-4 border-b border-slate-800 pb-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <span class="text-slate-500 text-xs ml-2">serial_monitor.exe</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="text-emerald-500">System ready - monitoring active</div>
+                        <div class="text-slate-300">Baseline: <span class="text-blue-400">234.5</span> | Noise StdDev: <span class="text-blue-400">12.1</span></div>
+                        <div class="text-slate-300">High Threshold: <span class="text-yellow-400">350.0</span> (Adaptive)</div>
+                        <div class="text-slate-300">SPRT LLR: <span class="text-purple-400">0.02</span> | Status: <span class="text-emerald-400">SECURE</span></div>
+                        <div class="text-slate-500 animate-pulse">_</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">لماذا هذا النظام مختلف؟</h2>
+                <p class="text-slate-400">نحن لا نقرأ القيم فقط، نحن نحللها إحصائياً.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-card p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition duration-300 group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chart-line text-emerald-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">عتبة تكيفية (Adaptive)</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        النظام يتعلم "ضجيج" البيئة المحيطة ويقوم بضبط مستوى الإنذار تلقائياً. يعمل بدقة في المطبخ أو المصنع دون إعادة برمجة.
+                    </p>
+                </div>
+
+                <div class="bg-card p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition duration-300 group">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-brain text-blue-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">تحليل SPRT الإحصائي</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        نستخدم اختبار النسبة الاحتمالية المتسلسل للتمييز بدقة متناهية بين التسرب الحقيقي والارتفاعات المفاجئة الكاذبة.
+                    </p>
+                </div>
+
+                <div class="bg-card p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition duration-300 group">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-filter text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">فلترة الضجيج الديناميكية</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        تطبيق فلاتر CUSUM و Exponential Smoothing لضمان قراءات مستقرة وخالية من التذبذب الكهربائي.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wiring" class="py-20 border-y border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-white mb-6">دليل التوصيل (Wiring)</h2>
+                    <p class="text-slate-400 mb-8">
+                        صمم النظام ليكون بسيط التركيب. الجدول التالي يوضح كيفية توصيل القطع (Arduino, MQ-Sensor, LCD) بناءً على الكود المصدري.
+                    </p>
+                    
+                    <div class="overflow-hidden rounded-xl border border-slate-700">
+                        <table class="w-full text-left text-sm">
+                            <thead class="bg-slate-800 text-white">
+                                <tr>
+                                    <th class="p-4">القطعة (Component)</th>
+                                    <th class="p-4">منفذ القطعة (Pin)</th>
+                                    <th class="p-4">الأردوينو (Arduino Pin)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-700 bg-card text-slate-300">
+                                <tr>
+                                    <td class="p-4 font-bold text-white">Gas Sensor (MQ-2)</td>
+                                    <td class="p-4">Analog Out (A0)</td>
+                                    <td class="p-4 text-emerald-400 font-mono">A0</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-white">Buzzer</td>
+                                    <td class="p-4">Positive (+)</td>
+                                    <td class="p-4 text-emerald-400 font-mono">Digital 8</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-white">LCD (I2C)</td>
+                                    <td class="p-4">SDA</td>
+                                    <td class="p-4 text-emerald-400 font-mono">A4 (UNO) / SDA</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-white">LCD (I2C)</td>
+                                    <td class="p-4">SCL</td>
+                                    <td class="p-4 text-emerald-400 font-mono">A5 (UNO) / SCL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md aspect-video bg-slate-800 rounded-xl border-2 border-dashed border-slate-600 flex flex-col items-center justify-center p-8 text-center group hover:border-emerald-500 transition">
+                        <i class="fa-solid fa-microchip text-6xl text-slate-600 mb-4 group-hover:text-emerald-500 transition"></i>
+                        <h4 class="text-white font-bold text-lg">مخطط الدائرة جاهز</h4>
+                        <p class="text-slate-400 text-sm mt-2">يعتمد النظام على بروتوكول I2C للشاشة ومدخل Analog للحساس لضمان أسرع استجابة.</p>
+                        <a href="https://github.com/hydrayr545" target="_blank" class="mt-4 text-emerald-400 text-sm hover:underline">عرض المخطط التفصيلي على GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="manual" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-16">دليل الاستخدام</h2>
+            
+            <div class="relative border-r border-slate-800 mr-4 md:mr-0 md:border-r-0 md:border-l space-y-12">
+                
+                <div class="relative md:flex items-center gap-8">
+                    <div class="hidden md:block w-1/2 text-left pl-8">
+                        <h3 class="text-xl font-bold text-white">1. التشغيل والمعايرة (Warmup)</h3>
+                        <p class="text-slate-400">عند توصيل الطاقة، سيظهر عداد تنازلي لمدة 60 ثانية. <br><span class="text-emerald-400">هام:</span> لا تعرض الحساس للغاز خلال هذه الفترة ليقوم بحساب "نقطة الصفر" بدقة.</p>
+                    </div>
+                    <div class="absolute right-0 translate-x-1/2 md:translate-x-0 md:static w-8 h-8 bg-primary rounded-full border-4 border-dark flex items-center justify-center text-white text-xs font-bold">1</div>
+                    <div class="md:hidden pr-8">
+                        <h3 class="text-xl font-bold text-white">1. التشغيل والمعايرة</h3>
+                        <p class="text-slate-400">انتظر 60 ثانية حتى يجمع النظام عينات الهواء ويحدد المستوى الطبيعي.</p>
+                    </div>
+                    <div class="hidden md:block w-1/2"></div>
+                </div>
+
+                <div class="relative md:flex items-center gap-8">
+                    <div class="hidden md:block w-1/2"></div>
+                    <div class="absolute right-0 translate-x-1/2 md:translate-x-0 md:static w-8 h-8 bg-blue-500 rounded-full border-4 border-dark flex items-center justify-center text-white text-xs font-bold">2</div>
+                    <div class="w-full md:w-1/2 md:pr-8 pr-8">
+                        <h3 class="text-xl font-bold text-white">2. المراقبة الذكية</h3>
+                        <p class="text-slate-400">الشاشة ستعرض تركيز الغاز (PPM) وحالة النظام (OK/WARN). النظام يقوم بتحديث "خط الأساس" كل دقيقة لتعويض تغيرات الحرارة والرطوبة.</p>
+                    </div>
+                </div>
+
+                <div class="relative md:flex items-center gap-8">
+                    <div class="hidden md:block w-1/2 text-left pl-8">
+                        <h3 class="text-xl font-bold text-white">3. إنذار الخطر المؤكد</h3>
+                        <p class="text-slate-400">إذا تجاوز الغاز العتبة + وافق تحليل SPRT الاحصائي على وجود خطر، ستومض الشاشة ويصدح الجرس. هذا يمنع الإنذارات الكاذبة الناتجة عن العطور أو البخار العابر.</p>
+                    </div>
+                    <div class="absolute right-0 translate-x-1/2 md:translate-x-0 md:static w-8 h-8 bg-red-500 rounded-full border-4 border-dark flex items-center justify-center text-white text-xs font-bold">3</div>
+                    <div class="md:hidden pr-8">
+                        <h3 class="text-xl font-bold text-white">3. إنذار الخطر المؤكد</h3>
+                        <p class="text-slate-400">تنبيه صوتي وبصري فقط عند وجود تسرب حقيقي ومستمر.</p>
+                    </div>
+                    <div class="hidden md:block w-1/2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-card border-t border-slate-800 pt-16 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">تم التطوير بواسطة</h2>
+            <div class="inline-block p-1 rounded-full bg-gradient-to-r from-emerald-500 to-blue-500 mb-6">
+                <div class="bg-card px-8 py-3 rounded-full">
+                    <span class="text-xl font-bold text-white tracking-widest uppercase">Montser Al Matri</span>
+                </div>
+            </div>
+            <p class="text-slate-500 text-sm mb-8">
+                Ethical Hacker & Embedded Systems Developer<br>
+                جميع الحقوق محفوظة © 2026
+            </p>
+            <div class="flex justify-center gap-6">
+                <a href="https://github.com/hydrayr545" target="_blank" class="text-slate-400 hover:text-white transition transform hover:scale-110">
+                    <i class="fa-brands fa-github text-3xl"></i>
+                </a>
+                <a href="mailto:Foxmgh@protonmail.com" class="text-slate-400 hover:text-white transition transform hover:scale-110">
+                    <i class="fa-solid fa-envelope text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
